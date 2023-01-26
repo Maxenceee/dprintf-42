@@ -1,4 +1,4 @@
-# Dprintf 42
+# Dprintf
 
 Supported types : %, c, s, d, i, f, u, x, X, p <br/>
 Supported flags : #, blank, +, ., -, 0, *
