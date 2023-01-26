@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_string.c                                  :+:      :+:    :+:   */
+/*   ft_dprint_string.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mgama <mgama@student.42lyon.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -23,11 +23,11 @@ void	ft_putstrprec(char *str, int prec, t_data *data)
 	(data->count) += c;
 }
 
-static void	ft_print_spaces(char *str, t_data *data, t_flags flags)
+static void	ft_dprint_spaces(char *str, t_data *data, t_flags flags)
 {
 	if (flags.dot >= 0)
 	{
-		ft_print_width(flags.dot, ft_strlen(str), 0, data);
+		ft_dprint_width(flags.dot, ft_strlen(str), 0, data);
 		ft_putstrprec(str, flags.dot, data);
 	}
 	else
@@ -36,7 +36,7 @@ static void	ft_print_spaces(char *str, t_data *data, t_flags flags)
 	}
 }
 
-void	ft_print_str(char *s, t_data *data, t_flags flags)
+void	ft_dprint_str(char *s, t_data *data, t_flags flags)
 {
 	int	c;
 
@@ -46,12 +46,12 @@ void	ft_print_str(char *s, t_data *data, t_flags flags)
 	if (flags.dot >= 0 && (size_t)flags.dot > ft_strlen(s))
 		flags.dot = ft_strlen(s);
 	if (flags.minus == 1)
-		ft_print_spaces(s, data, flags);
+		ft_dprint_spaces(s, data, flags);
 	if (flags.dot >= 0)
-		ft_print_max_width(flags.width, flags.dot, 0, data);
+		ft_dprint_max_width(flags.width, flags.dot, 0, data);
 	else
-		ft_print_width(flags.width, ft_strlen(s), 0, data);
+		ft_dprint_width(flags.width, ft_strlen(s), 0, data);
 	if (flags.minus == 0)
-		ft_print_spaces(s, data, flags);
+		ft_dprint_spaces(s, data, flags);
 	(data->count) += c;
 }

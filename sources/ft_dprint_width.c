@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_width.c                                   :+:      :+:    :+:   */
+/*   ft_dprint_width.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mgama <mgama@student.42lyon.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -12,7 +12,7 @@
 
 #include "../includes/ft_dprintf.h"
 
-void	ft_print_width(int width, int minus, int has_zero, t_data *data)
+void	ft_dprint_width(int width, int minus, int has_zero, t_data *data)
 {
 	while (width - minus > 0)
 	{
@@ -25,7 +25,7 @@ void	ft_print_width(int width, int minus, int has_zero, t_data *data)
 	}
 }
 
-void	ft_print_max_width(int width, int max, int has_zero, t_data *data)
+void	ft_dprint_max_width(int width, int max, int has_zero, t_data *data)
 {
 	if (max < width)
 		return ;

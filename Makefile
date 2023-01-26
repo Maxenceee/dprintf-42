@@ -11,14 +11,14 @@ SRCS			=	sources/ft_bzero.c \
 					sources/ft_len.c \
 					sources/ft_memset.c \
 					sources/ft_pow.c \
-					sources/ft_print_char.c \
-					sources/ft_print_float.c \
-					sources/ft_print_hex.c \
-					sources/ft_print_int.c \
-					sources/ft_print_pointer.c \
-					sources/ft_print_string.c \
-					sources/ft_print_u_int.c \
-					sources/ft_print_width.c \
+					sources/ft_dprint_char.c \
+					sources/ft_dprint_float.c \
+					sources/ft_dprint_hex.c \
+					sources/ft_dprint_int.c \
+					sources/ft_dprint_pointer.c \
+					sources/ft_dprint_string.c \
+					sources/ft_dprint_u_int.c \
+					sources/ft_dprint_width.c \
 					sources/ft_dprintf.c \
 					sources/ft_strcat.c \
 					sources/ft_strdup.c \

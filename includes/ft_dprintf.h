@@ -6,7 +6,7 @@
 /*   By: mgama <mgama@student.42lyon.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/09 13:33:45 by mgama             #+#    #+#             */
-/*   Updated: 2023/01/26 22:14:42 by mgama            ###   ########.fr       */
+/*   Updated: 2023/01/26 22:22:31 by mgama            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,33 +43,33 @@ typedef struct s_flags
 int		ft_dprintf(int fd, const char *fmt, ...);
 
 /* print_width */
-void	ft_print_width(int width, int minus, int has_zero, t_data *data);
-void	ft_print_max_width(int width, int max, int has_zero, t_data *data);
+void	ft_dprint_width(int width, int minus, int has_zero, t_data *data);
+void	ft_dprint_max_width(int width, int max, int has_zero, t_data *data);
 
 /* print_char */
 void	ft_putchar(char c);
-void	ft_putchar_c(char c, t_data *data);
-void	ft_print_char(char c, t_data *data, t_flags flags);
+void	ft_dputchar_c(char c, t_data *data);
+void	ft_dprint_char(char c, t_data *data, t_flags flags);
 
 /* print_string */
 void	ft_putstrprec(char *str, int prec, t_data *data);
-void	ft_print_str(char *s, t_data *data, t_flags flags);
+void	ft_dprint_str(char *s, t_data *data, t_flags flags);
 
 /* print_int */
-void	ft_print_int(int i, t_data *data, t_flags flags);
+void	ft_dprint_int(int i, t_data *data, t_flags flags);
 
 /* print_u_int */
-void	ft_print_u_int(unsigned int unsi, t_data *data, t_flags flags);
+void	ft_dprint_u_int(unsigned int unsi, t_data *data, t_flags flags);
 
 /* print_float */
-void	ft_print_float(double i, t_data *data, t_flags flags);
+void	ft_dprint_float(double i, t_data *data, t_flags flags);
 
 /* print_hex */
-void	ft_print_hex(unsigned int ui, int lower,
+void	ft_dprint_hex(unsigned int ui, int lower,
 			t_data *data, t_flags flags);
 
 /* print_pointer */
-void	ft_print_pointer(unsigned long long ull, t_data *data,
+void	ft_dprint_pointer(unsigned long long ull, t_data *data,
 			t_flags flags);
 
 /* strlen */
