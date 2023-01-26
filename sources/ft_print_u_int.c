@@ -6,21 +6,23 @@
 /*   By: mgama <mgama@student.42lyon.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/20 15:08:39 by mgama             #+#    #+#             */
-/*   Updated: 2023/01/26 21:35:36 by mgama            ###   ########.fr       */
+/*   Updated: 2023/01/26 22:10:05 by mgama            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/ft_printf.h"
 #include "../includes/ft_flags.h"
 
-static void	ft_print_in_u_int_spaces(char *unsi_int, t_data *data, t_flags flags)
+static void	ft_print_in_u_int_spaces(char *unsi_int,
+	t_data *data, t_flags flags)
 {
 	if (flags.dot >= 0)
 		ft_print_width(flags.dot - 1, ft_strlen(unsi_int) - 1, 1, data);
 	ft_putstrprec(unsi_int, ft_strlen(unsi_int), data);
 }
 
-static void	ft_print_u_int_spaces(char *unsi_int, t_data *data, t_flags flags)
+static void	ft_print_u_int_spaces(char *unsi_int,
+	t_data *data, t_flags flags)
 {
 	if (flags.minus == 1)
 		ft_print_in_u_int_spaces(unsi_int, data, flags);

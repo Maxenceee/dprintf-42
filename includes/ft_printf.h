@@ -6,7 +6,7 @@
 /*   By: mgama <mgama@student.42lyon.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/09 13:33:45 by mgama             #+#    #+#             */
-/*   Updated: 2023/01/26 21:49:25 by mgama            ###   ########.fr       */
+/*   Updated: 2023/01/26 22:09:02 by mgama            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,6 @@ typedef struct s_data
 	int		fd;
 	int		count;
 }				t_data;
-
 
 typedef struct s_flags
 {

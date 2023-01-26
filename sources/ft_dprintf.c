@@ -6,7 +6,7 @@
 /*   By: mgama <mgama@student.42lyon.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/09 13:33:24 by mgama             #+#    #+#             */
-/*   Updated: 2023/01/26 21:52:38 by mgama            ###   ########.fr       */
+/*   Updated: 2023/01/26 22:09:35 by mgama            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,8 @@ static t_flags	ft_flags(void)
 	return (flags);
 }
 
-static void	ft_switch_types(int type, va_list *argp, t_data *data, t_flags flags)
+static void	ft_switch_types(int type, va_list *argp,
+	t_data *data, t_flags flags)
 {
 	if (type == '%')
 		ft_putchar_c('%', data);

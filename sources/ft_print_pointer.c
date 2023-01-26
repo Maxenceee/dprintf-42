@@ -6,14 +6,15 @@
 /*   By: mgama <mgama@student.42lyon.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/20 15:47:22 by mgama             #+#    #+#             */
-/*   Updated: 2023/01/26 21:34:57 by mgama            ###   ########.fr       */
+/*   Updated: 2023/01/26 22:10:18 by mgama            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/ft_printf.h"
 #include "../includes/ft_flags.h"
 
-static void	ft_print_in_pointer_spaces(char *pointer, t_data *data, t_flags flags)
+static void	ft_print_in_pointer_spaces(char *pointer,
+	t_data *data, t_flags flags)
 {
 	ft_putstrprec("0x", 2, data);
 	if (flags.dot >= 0)
@@ -25,7 +26,8 @@ static void	ft_print_in_pointer_spaces(char *pointer, t_data *data, t_flags flag
 		ft_putstrprec(pointer, ft_strlen(pointer), data);
 }
 
-void	ft_print_pointer(unsigned long long ull, t_data *data, t_flags flags)
+void	ft_print_pointer(unsigned long long ull,
+	t_data *data, t_flags flags)
 {
 	char	*pointer;
 
