@@ -6,11 +6,11 @@
 /*   By: mgama <mgama@student.42lyon.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/20 15:47:22 by mgama             #+#    #+#             */
-/*   Updated: 2023/01/26 22:10:18 by mgama            ###   ########.fr       */
+/*   Updated: 2023/01/26 22:12:17 by mgama            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/ft_printf.h"
+#include "../includes/ft_dprintf.h"
 #include "../includes/ft_flags.h"
 
 static void	ft_print_in_pointer_spaces(char *pointer,

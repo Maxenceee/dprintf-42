@@ -6,12 +6,12 @@
 /*   By: mgama <mgama@student.42lyon.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/09 13:33:24 by mgama             #+#    #+#             */
-/*   Updated: 2023/01/26 22:09:35 by mgama            ###   ########.fr       */
+/*   Updated: 2023/01/26 22:13:16 by mgama            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/ft_flags.h"
-#include "../includes/ft_printf.h"
+#include "../includes/ft_dprintf.h"
 
 static t_flags	ft_flags(void)
 {

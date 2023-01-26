@@ -6,14 +6,14 @@
 /*   By: mgama <mgama@student.42lyon.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/09 17:16:35 by mgama             #+#    #+#             */
-/*   Updated: 2022/12/09 17:27:15 by mgama            ###   ########.fr       */
+/*   Updated: 2023/01/26 22:13:16 by mgama            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FT_FLAGS_H
 # define FT_FLAGS_H
 
-# include "ft_printf.h"
+# include "ft_dprintf.h"
 
 void	ft_check_flags(const char *fmt, va_list *argp,
 			t_flags *flags, int *idx);

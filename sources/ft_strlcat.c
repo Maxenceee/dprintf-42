@@ -6,11 +6,11 @@
 /*   By: mgama <mgama@student.42lyon.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/07 13:59:56 by mgama             #+#    #+#             */
-/*   Updated: 2022/12/30 00:04:09 by mgama            ###   ########.fr       */
+/*   Updated: 2023/01/26 22:13:16 by mgama            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/ft_printf.h"
+#include "../includes/ft_dprintf.h"
 
 int	ft_strlcat(char *dest, char *src, unsigned int size)
 {

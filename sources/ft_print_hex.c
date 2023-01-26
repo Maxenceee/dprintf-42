@@ -6,11 +6,11 @@
 /*   By: mgama <mgama@student.42lyon.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/20 15:26:50 by mgama             #+#    #+#             */
-/*   Updated: 2023/01/26 21:34:30 by mgama            ###   ########.fr       */
+/*   Updated: 2023/01/26 22:13:16 by mgama            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/ft_printf.h"
+#include "../includes/ft_dprintf.h"
 #include "../includes/ft_flags.h"
 
 static void	ft_print_in_hex_spaces(char *hexa, int lower,

@@ -1,17 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_printf.h                                        :+:      :+:    :+:   */
+/*   ft_dprintf.h                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mgama <mgama@student.42lyon.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/09 13:33:45 by mgama             #+#    #+#             */
-/*   Updated: 2023/01/26 22:09:02 by mgama            ###   ########.fr       */
+/*   Updated: 2023/01/26 22:14:42 by mgama            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_PRINTF_H
-# define FT_PRINTF_H
+#ifndef FT_DPRINTF_H
+# define FT_DPRINTF_H
 
 # include <unistd.h>
 # include <stdarg.h>
@@ -122,4 +122,4 @@ void	ft_bzero(void *s, size_t n);
 /* ft_pow */
 double	ft_pow(double x, double y);
 
-#endif /* ft_printf_h */
+#endif /* ft_dprintf_h */

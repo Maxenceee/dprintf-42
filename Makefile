@@ -36,14 +36,19 @@ CFLAGS			=	-Wall -Wextra -Werror
 
 NAME			=	libftdprintf.a
 
+GREEN			=	\033[1;32m
+BLUE			=	\033[1;34m
+DEFAULT			=	\033[0m
+
 $(OBJ_DIR)/%.o: sources/%.c $(HEADER_DIR) Makefile
 	@mkdir -p $(OBJ_DIR)
+	@echo "$(BLUE)Compiling $<$(DEFAULT)"
 	@$(CC) $(CFLAGS) -c $< -o $@ -I $(HEADER_DIR)
 
 all:			$(NAME)
 
 $(NAME):		$(OBJS)
-				$(LIBC) $(NAME) $(OBJS)
+				@$(LIBC) $(NAME) $(OBJS)
 				@echo "$(GREEN)$(NAME) compiled!$(DEFAULT)"
 
 clean:
